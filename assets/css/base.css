@@ -1,0 +1,111 @@
+:root {
+    --white-color-backrgoud: #fff;
+    --text-color: #888;
+    --color-logo: #ffc876;
+    --color-black: black;
+    --color-history: #ccc;
+    --color-zing: #c662ef;
+    --backgroud-main:#f4f5fe;
+    --backgroud-navbar:white;
+    --background-input: white;
+    --border-header:#f4f5fe;
+}
+
+[data-theme='dark'] {
+    --background-input: #353535;
+    --border-header:#333;
+
+    --backgroud-navbar:#292929;
+    
+    --white-color-backrgoud: #181818;
+    --text-color: white;
+    --color-black: white;
+    --backgroud-main:#1e1e1e;
+
+}
+
+
+
+/* dark mode */
+#toggleBtn {
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #888;
+    box-shadow: rgba(100, 100, 110, 0.2) 0px 8px 28px 0px;
+    position: fixed;
+    right: 180px;
+    top: 40px;
+}
+
+#toggleBtn::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+#toggleBtn.active::before {
+    transform: translateX(30px);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.app {
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    background-color: var(--white-color);
+    line-height: 1.6rem;
+    outline: none;
+}
+
+.btn--size-s {
+    height: 32px;
+    font-size: 1.2rem;
+}
+
+.btn.btn--nomal-hover:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #c3c3c3;
+    color: #949494;
+}

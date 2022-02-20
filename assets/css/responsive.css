@@ -1,0 +1,131 @@
+/* mobile and table  */
+
+@media (max-width:1023px){
+
+    .hide-on-mobile-table {
+        display: none;
+
+    }
+    /* .flex-end-table {
+        display: flex;
+        justify-content: flex-end;
+        
+    } */
+   .sns_icon_left{
+       width: 60px;
+       height: 60px;
+       
+   }
+    .sns_icon_left i {
+        font-size: 2rem;
+        line-height: 60px;
+    }
+    
+    
+    .use-select {
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    .menu-button-mobile-table  {
+        display: block;
+    }
+    
+}
+
+
+/* table  */
+
+@media (min-width:740px) and (max-width:1023px ){
+    .hide-on-table{
+        display: none;
+    }
+    .flex-end-table {
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    .header__logo-pd a {
+        display: block;
+        height: 100%;
+    }
+    .header__logo-pd img {
+        margin-top: 15px;
+    }
+   
+
+
+
+}
+
+
+/* mobile */
+@media (max-width:739px){
+
+    .hide-on-mobile {
+        display: none;
+    }
+    .header__logo-pd {
+        text-align: center;
+    }
+    .header__navbar-list {
+        margin-left: 20px;
+    }
+    .mobile-center {
+        
+      
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .mobile-center-footer {
+        margin: auto;
+    }
+    .mobile-magrin {
+        margin-top: 30px;
+    }
+    .header__container{
+        margin: 0 8px;
+    }
+    .app__container{
+        margin: 0 8px;
+        margin-top: 16px;
+    }
+    .nav-product__item-link {
+        font-size: 1.6rem;
+    }
+    .nav-product::before {
+        display: none;
+    }
+    .logo-footer {
+        overflow: scroll;
+    }
+    .logo-container__link {
+        display: block;
+        width: 50%;
+    }
+    .logo-container__link img {
+        width: 100%;
+    }
+    .last-footer__container {
+        display: block;
+        text-align: center;
+    }
+    .last-footer__container span {
+       
+        
+    }
+    .last-footer__container img {
+        display: block;
+        /* width: 100%; */
+        margin: auto;
+        margin-top: 10px;
+    }
+    .header__navbar-pd {
+        justify-content: space-between;
+    }
+    .pd-mobile {
+        padding-left: 8px;
+    }
+    
+}
