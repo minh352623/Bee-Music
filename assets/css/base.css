@@ -9,9 +9,15 @@
     --backgroud-navbar:white;
     --background-input: white;
     --border-header:#f4f5fe;
+    --color-boder-item:rgba(0,0,0,0.1);
+    --color-zingchart: rgba(255,255,255,1);
 }
 
 [data-theme='dark'] {
+    --color-zingchart:#303030;
+
+    --color-boder-item:rgba(255,255,255,0.1);
+
     --background-input: #353535;
     --border-header:#333;
 
@@ -33,7 +39,7 @@
     border-radius: 20px;
     background-color: #888;
     box-shadow: rgba(100, 100, 110, 0.2) 0px 8px 28px 0px;
-    position: fixed;
+    position: absolute;
     right: 180px;
     top: 40px;
 }
