@@ -180,6 +180,8 @@ html {
     margin-left: 40px;
     margin-right: 10px;
     overflow: hidden;
+    height:72vh;
+
 
 }
 
@@ -302,7 +304,7 @@ html {
 
 .interactive__app {
     padding: 16px 0;
-    height: 560px;
+    height: 100%;
     overflow: hidden scroll;
 }
 
