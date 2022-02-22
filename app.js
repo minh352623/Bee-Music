@@ -287,6 +287,63 @@ const app = {
             image: './assets/images/andiez.webp',
 
         },
+        //
+        {
+            name: 'Anh chẳng sau mà',
+            singer: 'Khang Việt',
+            path: './assets/music/vietnamese/Anh-Chang-Sao-Ma-Khang-Viet.mp3',
+            image: './assets/images/khangviet.webp',
+
+        },
+        {
+            name: 'Để cho anh khóc',
+            singer: 'Thành Đại',
+            path: './assets/music/vietnamese/De-Cho-Anh-Khoc-Remix-Thanh-Dai-Sieu.mp3',
+            image: './assets/images/thanhdai.webp',
+
+        },
+        {
+            name: 'Tình yêu hoa gió',
+            singer: 'Trương Thế Vinh',
+            path: './assets/music/vietnamese/Tinh-Yeu-Hoa-Gio-Truong-The-Vinh.mp3',
+            image: './assets/images/ttvinh.webp',
+
+        },
+        {
+            name: 'Thất Tình',
+            singer: 'Trịnh Đình Quang',
+            path: './assets/music/vietnamese/That-Tinh-Trinh-Dinh-Quang.mp3',
+            image: './assets/images/tdquang.webp',
+
+        },
+        {
+            name: 'Phai dấu cuộc tình',
+            singer: 'Bích Phương',
+            path: './assets/music/vietnamese/Phai-Dau-Cuoc-Tinh-Bich-Phuong.mp3',
+            image: './assets/images/bichphuong1.webp',
+
+        },
+        {
+            name: 'Giá ngày đầu đừng nói câu thương nhau',
+            singer: 'Isaac',
+            path: './assets/music/vietnamese/Gia-Ngay-Dau-Dung-Noi-Thuong-Nhau-Isaac.mp3',
+            image: './assets/images/isac.webp',
+
+        },
+        {
+            name: 'Em không thể',
+            singer: 'Tiên Tiên',
+            path: './assets/music/vietnamese/Em-Khong-The-Tien-Tien-Touliver.mp3',
+            image: './assets/images/tientien.webp',
+
+        },
+        {
+            name: 'Lắng nghe nước mắt',
+            singer: 'Cao Tùng Anh',
+            path: './assets/music/vietnamese/Lang-Nghe-Nuoc-Mat-Mr-Siro.mp3',
+            image: './assets/images/mrsio.webp',
+
+        },
         
 
     ],
@@ -532,7 +589,7 @@ const app = {
 
         })
         const htmls2 = this.songs.map((song, index) => {
-            if(index>12){
+            if(index>12 && index<33){
 
                 return `
                 <div  class="interactive__item-link  ${index == this.currentIndex ? "interactive__item-link-active" : ""}" data-index="${index}">
@@ -753,6 +810,228 @@ const app = {
             }
 
         })
+        const htmls4 = this.songs.map((song, index) => {
+            if(index>32 && index<37){
+
+                return `
+                <div  class="interactive__item-link  ${index == this.currentIndex ? "interactive__item-link-active" : ""}" data-index="${index}">
+                <div class="stt"></div>
+                <div class="thumb1"
+                    style="background-image: url('${song.image}')">
+                    
+                    <img class="animation-img" src="./assets/images/animation.gif">
+                    
+                </div>
+                <span class="title">
+                    ${song.name}
+                </span>
+                <span class="artist">
+                    ${song.singer}
+                </span>
+                <span class="time time-${index}"></span>
+                <span class="album">None</span>
+                <span class="different">
+                    <i class="different-icon fas fa-ellipsis-h"></i>
+                    <div class="menu">
+                        <div class="menu__list">
+                            <div class="menu__list-info">
+                                <div class="menu__img">
+                                    <img src="./assets/images/blackpink.webp" alt="">
+                                </div>
+                                <div class="menu__infomation">
+                                    <p>Sao Em Nỡ</p>
+                                    <div class="menu__interactive">
+                                        <div class="menu__interactive-item">
+    
+                                            <i class="fas fa-heart "></i>
+                                            <p>3.1M</p>
+                                        </div>
+                                        <div class="menu__interactive-item">
+    
+                                            <i class="fas fa-heart "></i>
+    
+                                            <p>3.1M</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__list-1">
+                            <div class="menu__list-info-1">
+                                <div class="menu__icon">
+                                    <i class="fas fa-download"></i>
+                                    <p>Tải Xuống</p>
+                                </div>
+                                <div class="menu__icon">
+                                <i class="fas fa-microphone"></i>
+                                    <p>Lời bài hát</p>
+                                </div>
+                                <div class="menu__icon">
+                                <i class="fas fa-ban"></i>
+                                    <p>Chặn</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="menu__list-2">
+                            <ul class="menu__list-container">
+                                <li class="menu__footer-item">
+                                    <a href="https://www.facebook.com/" class="menu__footer-item-link">
+    
+                                        <i class="fas fa-play"></i>
+                                        <p>Thêm vào danh sách phát</p>
+                                    </a>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-fast-forward"></i>
+                                    <p>Phát tiếp theo</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-mobile"></i>
+                                    <p>Cài đặt nhạc chờ</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-plus"></i>
+                                    <p>Thêm vào Playlist</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-radiation"></i>
+                                    <p>Phát radio của bài hát</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                    <i class="fas fa-comment"></i>
+                                    <p>Bình luận</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                    <i class="fas fa-link"></i>
+                                    <p>Sao chép link</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                    <i class="fas fa-share"></i>
+                                    <p>chia sẻ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+    
+            </div>
+                `;
+            }
+
+        })
+        const htmls5 = this.songs.map((song, index) => {
+            if(index>=37){
+
+                return `
+                <div  class="interactive__item-link  ${index == this.currentIndex ? "interactive__item-link-active" : ""}" data-index="${index}">
+                <div class="stt"></div>
+                <div class="thumb1"
+                    style="background-image: url('${song.image}')">
+                    
+                    <img class="animation-img" src="./assets/images/animation.gif">
+                    
+                </div>
+                <span class="title">
+                    ${song.name}
+                </span>
+                <span class="artist">
+                    ${song.singer}
+                </span>
+                <span class="time time-${index}"></span>
+                <span class="album">None</span>
+                <span class="different">
+                    <i class="different-icon fas fa-ellipsis-h"></i>
+                    <div class="menu">
+                        <div class="menu__list">
+                            <div class="menu__list-info">
+                                <div class="menu__img">
+                                    <img src="./assets/images/blackpink.webp" alt="">
+                                </div>
+                                <div class="menu__infomation">
+                                    <p>Sao Em Nỡ</p>
+                                    <div class="menu__interactive">
+                                        <div class="menu__interactive-item">
+    
+                                            <i class="fas fa-heart "></i>
+                                            <p>3.1M</p>
+                                        </div>
+                                        <div class="menu__interactive-item">
+    
+                                            <i class="fas fa-heart "></i>
+    
+                                            <p>3.1M</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__list-1">
+                            <div class="menu__list-info-1">
+                                <div class="menu__icon">
+                                    <i class="fas fa-download"></i>
+                                    <p>Tải Xuống</p>
+                                </div>
+                                <div class="menu__icon">
+                                <i class="fas fa-microphone"></i>
+                                    <p>Lời bài hát</p>
+                                </div>
+                                <div class="menu__icon">
+                                <i class="fas fa-ban"></i>
+                                    <p>Chặn</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="menu__list-2">
+                            <ul class="menu__list-container">
+                                <li class="menu__footer-item">
+                                    <a href="https://www.facebook.com/" class="menu__footer-item-link">
+    
+                                        <i class="fas fa-play"></i>
+                                        <p>Thêm vào danh sách phát</p>
+                                    </a>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-fast-forward"></i>
+                                    <p>Phát tiếp theo</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-mobile"></i>
+                                    <p>Cài đặt nhạc chờ</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-plus"></i>
+                                    <p>Thêm vào Playlist</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                <i class="fas fa-radiation"></i>
+                                    <p>Phát radio của bài hát</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                    <i class="fas fa-comment"></i>
+                                    <p>Bình luận</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                    <i class="fas fa-link"></i>
+                                    <p>Sao chép link</p>
+                                </li>
+                                <li class="menu__footer-item">
+                                    <i class="fas fa-share"></i>
+                                    <p>chia sẻ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+    
+            </div>
+                `;
+            }
+
+        })
 
         const playlist_item1 = playlist[0];
         const playlist_item2 = playlist[1];
@@ -768,8 +1047,8 @@ const app = {
 
         playlist_item3.innerHTML = htmls2.join('');
         playlist_item4.innerHTML = htmls3.join('');
-        playlist_item5.innerHTML = htmls3.join('');
-        playlist_item6.innerHTML = htmls3.join('');
+        playlist_item5.innerHTML = htmls4.join('');
+        playlist_item6.innerHTML = htmls5.join('');
 
 
 
