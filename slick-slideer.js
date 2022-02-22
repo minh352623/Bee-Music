@@ -55,7 +55,73 @@ $(document).ready(function () {
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1500,
+        // dots: true,
+        responsive:[
+            {
+                breakpoint: 1025,
+                settings: {
+                  slidesToShow: 2,
+                 
+                }
+            }
+        ],
+    });
+    $('.page-radio__slide').slick({
+        //lập vô hạn
+        infinite: true,
+        //hiện ra 3 ảnh
+        slidesToShow: 6,
+        //mỗi lần scoll hiện ra 1 ảnh
+        slidesToScroll: 2,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        autoplay: true,
+        autoplaySpeed: 1500,
+        // dots: true,
+        responsive:[
+            {
+                breakpoint: 1025,
+                settings: {
+                  slidesToShow: 2,
+                 
+                }
+            }
+        ],
+    });
+    $('.chanel__right').slick({
+        //lập vô hạn
+        infinite: true,
+        //hiện ra 3 ảnh
+        slidesToShow: 1,
+        //mỗi lần scoll hiện ra 1 ảnh
+        slidesToScroll: 1,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // dots: true,
+        responsive:[
+            {
+                breakpoint: 1025,
+                settings: {
+                  slidesToShow: 2,
+                 
+                }
+            }
+        ],
+    });
+    $('.slider-program').slick({
+        //lập vô hạn
+        infinite: true,
+        //hiện ra 3 ảnh
+        slidesToShow: 2,
+        //mỗi lần scoll hiện ra 1 ảnh
+        slidesToScroll: 1,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         // dots: true,
         responsive:[
             {
